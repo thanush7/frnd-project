@@ -96,6 +96,7 @@ footer {
     background-color: #5f3d94;
     color: #bbadd3;
     font-size: 14px;
+    
 }
 
 .icons {
@@ -115,9 +116,22 @@ ul.footer-menu {
 }
 
 .footer-row {
-    padding-top: 80px;
+    padding-top: 10px;
 }
 
 .last-line {
     padding: 40px;
+}
+.custom-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /* Adjust as needed */
+}
+.navbar {
+    padding: 5px 20px; /* Adjust the padding values as needed */
+}
+
+.navbar-brand img {
+    height: 40px; /* Change the logo height to make it smaller */
 }
