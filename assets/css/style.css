@@ -5,7 +5,7 @@
 }
 
 
-.banner {
+/* .banner {
     background-color: #5f3d94;
     display: flex;
     height: 374px;
@@ -13,6 +13,35 @@
     align-items: center;
     color: white;
     line-height: 33px;
+} */
+
+.heads {
+    background-color: #5f3d94;
+    padding: 20px;
+    width: 100%;
+}
+
+.banner {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    align-items: center; /* Center content vertically */
+}
+
+.banner img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    flex: 1; /* Allow the image to take available space */
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column; /* Stack items on smaller screens */
+        text-align: center; /* Center text */
+    }
+
+    .banner img {
+        margin-top: 20px; /* Add some margin on top of the image when stacked */
+    }
 }
 
 .navbar {
