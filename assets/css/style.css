@@ -5,49 +5,12 @@
 }
 
 
-/* .banner {
-    background-color: #5f3d94;
-    display: flex;
-    height: 374px;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    line-height: 33px;
-} */
-
 .heads {
     background-color: #5f3d94;
     padding: 20px;
     width: 100%;
 }
 
-.banner {
-    display: flex; /* Use Flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    align-items: center; /* Center content vertically */
-}
-
-.banner img {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
-    flex: 1; /* Allow the image to take available space */
-}
-
-@media (max-width: 768px) {
-    .banner {
-        flex-direction: column; /* Stack items on smaller screens */
-        text-align: center; /* Center text */
-    }
-
-    .banner img {
-        margin-top: 20px; /* Add some margin on top of the image when stacked */
-    }
-}
-
-.navbar {
-    padding: 40px;
-    width: 100%;
-}
 
 .navbar a:hover {
     color: #5f3d94;
@@ -157,10 +120,39 @@ ul.footer-menu {
     justify-content: center;
     height: 50px; /* Adjust as needed */
 }
-.navbar {
-    padding: 5px 20px; /* Adjust the padding values as needed */
-}
+
 
 .navbar-brand img {
     height: 40px; /* Change the logo height to make it smaller */
+}
+.navbar-toggler {
+    border: none; /* Remove the default border if necessary */
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove default Bootstrap icon */
+    color: greenyellow; /* Set a custom color for the icon */
+    font-size: 1.5rem; /* Adjust size of the icon */
+    display: inline-block;
+    position: relative;
+
+}
+
+/* Create the hamburger icon using custom styles */
+.navbar-toggler-icon::before, 
+.navbar-toggler-icon::after, 
+.navbar-toggler-icon span {
+    content: '';
+    background-color:  #ffcc00; /* Change this to any color you want */
+    display: block;
+    height: 3px; /* Thickness of the lines */
+    width: 24px; /* Width of the lines */
+    margin: 5px 0;
+}
+
+/* Adjust the icon appearance on hover */
+.navbar-toggler:hover .navbar-toggler-icon::before,
+.navbar-toggler:hover .navbar-toggler-icon::after,
+.navbar-toggler:hover .navbar-toggler-icon span {
+    background-color: #ffcc00; /* Change color on hover if needed */
 }
