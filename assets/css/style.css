@@ -180,8 +180,8 @@ img.img-fluid {
     }
 
     .footer-menu {
-        flex-direction: column;
-        gap: 10px;
+        /* flex-direction: column;
+        gap: 10px; */
     }
 
     .footer-menu li {
@@ -319,6 +319,8 @@ img.img-fluid {
     section {
         padding: 30px 10px;
     }
+    
+    
 }
 
 /* Small devices (tablets, up to 768px) */
@@ -338,6 +340,29 @@ img.img-fluid {
 
     section {
         padding: 40px 20px;
+    }
+    .footer-row {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .footer-menu {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center menu items */
+    }
+
+    .footer-menu li {
+        margin: 5px 0; /* Vertical spacing for menu items */
+    }
+
+    .col-lg-4 {
+        width: 100%; /* Make columns full width */
+        margin-bottom: 20px; /* Add spacing between columns */
+    }
+
+    .icons {
+        flex-direction: row; /* Keep icons in a row */
+        justify-content: center; /* Center icons */
     }
 }
 
@@ -451,7 +476,6 @@ img.img-fluid {
 
     footer .list-inline-item a {
         font-size: 12px;
-        display: none;
     }
 
     footer .col-lg-4 img {
@@ -482,3 +506,27 @@ img.img-fluid {
     }
 }
 
+@media (min-width: 577px) and (max-width: 768px) {
+    .footer {
+        padding: 20px; /* Adjust padding for tablet */
+    }
+
+    .footer-menu {
+        flex-direction: row; /* Align items in a row */
+        justify-content: space-around; /* Space out items evenly */
+    }
+
+    .footer-menu li {
+        margin: 0 15px; /* Add horizontal spacing between items */
+    }
+
+    .icons {
+        justify-content: space-between; /* Space out icons evenly */
+    }
+
+    /* Adjust logo size */
+    .footer img {
+        width: 70%; /* Make logo a bit smaller on tablet */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
